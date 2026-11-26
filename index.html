@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaathirai</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header__bg">
+            <img src="./image/bg_image.png" alt="Yaathirai travel backdrop">
+        </div>
+
+        <nav class="navbar" aria-label="Primary navigation">
+            <a href="#" class="navbar__brand">
+                <img src="./image/logo.png" alt="Yaathirai logo">
+            </a>
+
+            <div class="navbar__actions">
+                <a href="#agents" class="navbar__link">
+                    <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                    <span>Call for Agents</span>
+                </a>
+
+                <a href="#support" class="navbar__link">
+                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                    <span>Support</span>
+                </a>
+
+                <a href="#auth" class="navbar__btn">
+                    <span>Login / Signup</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="header__hero">
+            <p class="header__tagline">Payanam thodangattum</p>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="yaathirai-main" id="explore">
+
+        <!-- Search Strip -->
+         <!-- Search Strip -->
+        <section class="search-strip" aria-label="Search travel routes">
+            <form class="search-form" action="#" method="get">
+                <div class="search-field">
+                    <label for="destination">Destination</label>
+                    <select id="destination" name="destination">
+                        <option value="" selected disabled>Select State / UT</option>
+                        <optgroup label="States">
+                            <option value="andhra-pradesh">Andhra Pradesh</option>
+                            <option value="arunachal-pradesh">Arunachal Pradesh</option>
+                            <option value="assam">Assam</option>
+                            <option value="bihar">Bihar</option>
+                            <option value="chhattisgarh">Chhattisgarh</option>
+                            <option value="goa">Goa</option>
+                            <option value="gujarat">Gujarat</option>
+                            <option value="haryana">Haryana</option>
+                            <option value="himachal-pradesh">Himachal Pradesh</option>
+                            <option value="jharkhand">Jharkhand</option>
+                            <option value="karnataka">Karnataka</option>
+                            <option value="kerala">Kerala</option>
+                            <option value="madhya-pradesh">Madhya Pradesh</option>
+                            <option value="maharashtra">Maharashtra</option>
+                            <option value="manipur">Manipur</option>
+                            <option value="meghalaya">Meghalaya</option>
+                            <option value="mizoram">Mizoram</option>
+                            <option value="nagaland">Nagaland</option>
+                            <option value="odisha">Odisha</option>
+                            <option value="punjab">Punjab</option>
+                            <option value="rajasthan">Rajasthan</option>
+                            <option value="sikkim">Sikkim</option>
+                            <option value="tamil-nadu">Tamil Nadu</option>
+                            <option value="telangana">Telangana</option>
+                            <option value="tripura">Tripura</option>
+                            <option value="uttar-pradesh">Uttar Pradesh</option>
+                            <option value="uttarakhand">Uttarakhand</option>
+                            <option value="west-bengal">West Bengal</option>
+                        </optgroup>
+                        <optgroup label="Union Territories">
+                            <option value="andaman-nicobar">Andaman &amp; Nicobar Islands</option>
+                            <option value="chandigarh">Chandigarh</option>
+                            <option value="dadra-nagar-haveli-daman-diu">Dadra &amp; Nagar Haveli and Daman &amp; Diu</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="jammu-kashmir">Jammu &amp; Kashmir</option>
+                            <option value="ladakh">Ladakh</option>
+                            <option value="lakshadweep">Lakshadweep</option>
+                            <option value="puducherry">Puducherry</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="travel-month">Travel Month</label>
+                    <select id="travel-month" name="travel-month">
+                        <option value="" selected disabled>Select Month</option>
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="travelers">Travelers</label>
+                    <input type="text" id="travelers" name="travelers" placeholder="2 Adults">
+                </div>
+
+                <button type="submit" class="search-btn">
+                    <i class="fa-solid fa-compass" aria-hidden="true"></i>
+                    <span>Explore Routes</span>
+                </button>
+            </form>
+        </section>
+        
+
+        <!-- Signature Routes -->
+        <section class="routes-section" aria-labelledby="routes-heading">
+            <div class="section-header">
+                <h2 id="routes-heading">Signature Yaathirai Routes</h2>
+                <p>Thoughtfully paced journeys across coastal roads, heritage towns, and misty hills</p>
+            </div>
+
+            <div class="routes-grid">
+                <article class="route-card">
+                    <div class="route-card__media">
+                        <img src="./image/Beach.jpg" alt="Coromandel Shore Trail">
+                        <span class="route-card__badge">Coastal</span>
+                    </div>
+                    <div class="route-card__body">
+                        <h3>Coromandel Shore Trail</h3>
+                        <p>Sunrise beaches, quiet harbours, and breezy seaside drives.</p>
+                    </div>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-card__media">
+                        <img src="./image/temple.jpg" alt="Temple and Heritage Circuit">
+                        <span class="route-card__badge">Heritage</span>
+                    </div>
+                    <div class="route-card__body">
+                        <h3>Temple &amp; Heritage Circuit</h3>
+                        <p>Ancient architecture, traditional crafts, and slow-paced exploration.</p>
+                    </div>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-card__media">
+                        <img src="./image/hill.jpg" alt="Western Ghats Escape">
+                        <span class="route-card__badge">Hill &amp; Mist</span>
+                    </div>
+                    <div class="route-card__body">
+                        <h3>Western Ghats Escape</h3>
+                        <p>Cool mountain air, winding ghat roads, and lush green valleys.</p>
+                    </div>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-card__media">
+                        <img src="./image/andanman.jpg" alt="Andaman and Lakshadweep Islands">
+                        <span class="route-card__badge">Island Escape</span>
+                    </div>
+                    <div class="route-card__body">
+                        <h3>Emerald Island Hopping</h3>
+                        <p>Turquoise lagoons, coral reefs, and serene white-sand shores across Andaman &amp; Lakshadweep.</p>
+                    </div>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-card__media">
+                        <img src="./image/pondy.jpg" alt="Puducherry French Colony">
+                        <span class="route-card__badge">French Quarter</span>
+                    </div>
+                    <div class="route-card__body">
+                        <h3>Puducherry Boulevard Stroll</h3>
+                        <p>Pastel colonial villas, bougainvillea-lined lanes, and calm promenade mornings.</p>
+                    </div>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-card__media">
+                        <img src="./image/northeast.avif" alt="North East Misty Hills">
+                        <span class="route-card__badge">North East Hills</span>
+                    </div>
+                    <div class="route-card__body">
+                        <h3>Cloud-Kissed North East Trail</h3>
+                        <p>Living root bridges, pine-covered valleys, and waterfalls across Meghalaya &amp; Sikkim.</p>
+                    </div>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-card__media">
+                        <img src="./image/rajasthan.avif" alt="Rajasthan Desert City">
+                        <span class="route-card__badge">Desert &amp; Royals</span>
+                    </div>
+                    <div class="route-card__body">
+                        <h3>Golden Thar &amp; Fort Circuit</h3>
+                        <p>Sandstone citadels, sunset camel trails, and vibrant desert evenings in Jaisalmer &amp; Jodhpur.</p>
+                    </div>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-card__media">
+                        <img src="./image/culture.jpg" alt="Varanasi Sacred Ghats and Culture">
+                        <span class="route-card__badge">Culture &amp; Soul</span>
+                    </div>
+                    <div class="route-card__body">
+                        <h3>Sacred Ghats &amp; Living Traditions</h3>
+                        <p>Evening river aarti, classical music alleys, and timeless cultural rituals along the Ganges.</p>
+                    </div>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-card__media">
+                        <img src="./image/tajmahal.avif" alt="Taj Mahal Agra">
+                        <span class="route-card__badge">Timeless Wonder</span>
+                    </div>
+                    <div class="route-card__body">
+                        <h3>Agra &amp; The Taj Mahal Dawn</h3>
+                        <p>Marble artistry glowing at sunrise, Mughal gardens, and historic Yamuna riverfront views.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Signature Modes: Cruise, Luxury Train, Airways -->
+        <section class="modes-section" aria-labelledby="modes-heading">
+            <div class="section-header">
+                <h2 id="modes-heading">Journey Beyond the Road</h2>
+                <p>Experience scenic voyages, royal rail cabins, and swift sky connections with Yaathirai</p>
+            </div>
+
+            <div class="modes-grid">
+                <article class="mode-card">
+                    <div class="mode-card__media">
+                        <img src="./image/cruise.jpg" alt="Coastal and River Cruise">
+                        <span class="mode-card__badge">Cruise</span>
+                    </div>
+                    <div class="mode-card__body">
+                        <h3>Ocean &amp; Backwater Cruises</h3>
+                        <p>Sail past coastal horizons and serene waterways with unhurried deck views and onboard comfort.</p>
+                    </div>
+                </article>
+
+                <article class="mode-card">
+                    <div class="mode-card__media">
+                        <img src="./image/train.jpg" alt="Royal Luxury Train Journey">
+                        <span class="mode-card__badge">Luxury Train</span>
+                    </div>
+                    <div class="mode-card__body">
+                        <h3>Palace &amp; Heritage Rails</h3>
+                        <p>Step into vintage elegance, panoramic suites, and classic rail routes across iconic landscapes.</p>
+                    </div>
+                </article>
+
+                <article class="mode-card">
+                    <div class="mode-card__media">
+                        <img src="./image/airways.jpg" alt="Domestic Airways Connection">
+                        <span class="mode-card__badge">Airways</span>
+                    </div>
+                    <div class="mode-card__body">
+                        <h3>Swift Sky Corridors</h3>
+                        <p>Connect distant regions effortlessly and save travel time for longer multi-city itineraries.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Signature Stays / Hotels -->
+        <section class="stays-section" aria-labelledby="stays-heading">
+            <div class="section-header">
+                <h2 id="stays-heading">Signature Yaathirai Stays</h2>
+                <p>Handpicked heritage havelis, coastal resorts, and misty hill retreats along every route</p>
+            </div>
+
+            <div class="stays-grid">
+                <article class="stay-card">
+                    <div class="stay-card__media">
+                        <img src="./image/resort.jpg" alt="Royal Heritage Haveli Stay">
+                        <span class="stay-card__badge">Heritage Stay</span>
+                    </div>
+                    <div class="stay-card__body">
+                        <h3>Courtyard Havelis &amp; Palaces</h3>
+                        <p>Restored courtyards, traditional hospitality, and calm morning views in historic towns.</p>
+                    </div>
+                </article>
+
+                <article class="stay-card">
+                    <div class="stay-card__media">
+                        <img src="./image/beach_resort.jpg" alt="Beachfront Coastal Resort">
+                        <span class="stay-card__badge">Coastal Retreat</span>
+                    </div>
+                    <div class="stay-card__body">
+                        <h3>Seaside Villas &amp; Resorts</h3>
+                        <p>Wake up to ocean breeze, palm-lined walkways, and relaxed evenings by the shore.</p>
+                    </div>
+                </article>
+
+                <article class="stay-card">
+                    <div class="stay-card__media">
+                        <img src="./image/hill_resort.jpg" alt="Misty Hill Eco Lodge">
+                        <span class="stay-card__badge">Hill Lodge</span>
+                    </div>
+                    <div class="stay-card__body">
+                        <h3>Misty Ridge Lodges</h3>
+                        <p>Cozy mountain rooms surrounded by tea estates, forest trails, and cool valley air.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Floating Chatbot Widget (Pure HTML + CSS) -->
+    <div class="chat-widget">
+        <input type="checkbox" id="chat-toggle" class="chat-toggle" aria-hidden="true">
+
+        <div class="chat-box" role="dialog" aria-label="Yaathirai Travel Assistant">
+            <div class="chat-box__header">
+                <div class="chat-box__title">
+                    <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                    <div>
+                        <h4>Yaathirai Assistant</h4>
+                        <span>Online &bull; Travel Desk</span>
+                    </div>
+                </div>
+                <label for="chat-toggle" class="chat-box__close" aria-label="Close chat">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </label>
+            </div>
+
+            <div class="chat-box__body">
+                <p class="chat-msg chat-msg--bot">
+                    Vanakkam! Where are you planning to travel? Looking for details on a Route, Cruise, or Luxury Train?
+                </p>
+
+                <div class="chat-quick-links">
+                    <a href="#explore">Explore All Routes</a>
+                    <a href="#agents">Talk to a Travel Agent</a>
+                    <a href="#support">24/7 Trip Support</a>
+                </div>
+            </div>
+
+            <form class="chat-box__footer" action="#agents" method="get">
+                <input type="text" placeholder="Type your destination..." aria-label="Message">
+                <button type="submit" aria-label="Send message">
+                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+
+        <label for="chat-toggle" class="chat-fab" aria-label="Open Yaathirai Assistant">
+            <i class="fa-solid fa-comment-dots" aria-hidden="true"></i>
+            <span>Ask Yaathirai</span>
+        </label>
+    </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer" id="support">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <img src="./image/logo.png" alt="Yaathirai logo">
+                <p>Thoughtfully paced journeys across India's coasts, heritage towns, misty hills, rails, skies, and stays.</p>
+            </div>
+
+            <div class="footer__col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#explore">Signature Routes</a></li>
+                    <li><a href="#explore">Cruise, Rail &amp; Air</a></li>
+                    <li><a href="#explore">Signature Stays</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col" id="agents">
+                <h4>Travel Desk</h4>
+                <ul>
+                    <li><a href="#agents">Call for Agents</a></li>
+                    <li><a href="#support">24/7 Trip Support</a></li>
+                    <li><a href="#auth">Login / Signup</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4>Connect &amp; Payments</h4>
+                <div class="footer__socials">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener" aria-label="X">
+                        <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="footer__payments" aria-label="Security and Payment Methods">
+                    <span class="pay-badge"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> 256-Bit SSL</span>
+                    <span class="pay-badge"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> UPI</span>
+                    <span class="pay-badge"><i class="fa-regular fa-credit-card" aria-hidden="true"></i> Cards</span>
+                    <span class="pay-badge"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> NetBanking</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2026 @ Yaathirai. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
